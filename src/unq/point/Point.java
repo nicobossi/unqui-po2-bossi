@@ -19,10 +19,15 @@ public class Point {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
+	public void setXY(int x, int y) {
+		this.setX(x);
+		this.setY(y);
+	}
+	
 
 	public Point(int x, int y) {
 		super();
-		this.x = x;
-		this.y = y;
+		this.setXY(x, y);
 	}
 }
